@@ -1,1 +1,28 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Conversor de URL</title>
+
+    <script type="text/javascript" src="urlTransform.js"></script>
+</head>
+
+    
+<body>
+    <p>
+        Desde 1º de junho de 2016, os estudos e professores de universidades que têm acesso a periódicos científicos através de um convênio com a CAPES, terão que utilizar o portal <a href="http://periodicos.capes.gov.br">Periódicos Capes</a>. Anteriormente, ao se utilizar uma máquina pertencente à rede das universidades ou uma VPN, era possível acessar os artigos diretamente da página das revistas. Agora, é preciso utilizar ou os links para as páginas das revistas e pesquisar o artigo em seus acervos, ou utilizar a busca do Google Scholar ou do Pubmed através do portal. Entretanto, muitas vezes você já possui o endereço do artigo na página da revista e tem que realizar uma nova busca apenas para utilizar o portal.
+    </p>
+    <p>
+        Com esse conversor, é possível pular esse passo. O portal utiliza um <a href="https://pt.wikipedia.org/wiki/Proxy">proxy</a> para providenciar o acesso aos artigos. Se você já possui o endereço do artigo, é possível convertê-lo para se obter o acesso sem a necessidade de uma nova busca. Mas para que o conversor funcione, você continua precisando ter acesso ao portal, seja por estar usando um computador em uma universidade conveniada, seja através de uma VPN. Além disso, é preciso que o artigo esteja disponível aos usuários do portal.
+    </p>
+    <p>
+        Aviso: Esse conversor é apenas uma versão <em>alpha</em> e possui vários bugs. Para que ele funcione, é preciso que você cole o endereço completo do artigo, inclusive com o http:// ou https://
+    </p>
+    <p>
+        Cole aqui a url do artigo: <input type="text" id="url_input" size="100" value="http://jama.jamanetwork.com/article.aspx?articleID=2526647">
+        <button onclick="urlTransform()" >transformar</button>
+    </p>
+
+    <p id="transformedURL"></p>
+
+</body>
+</html>
